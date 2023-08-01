@@ -16,32 +16,32 @@ function rollDice() {
 
 function updateRollHistory() {
     rollHistoryEl.innerHTML = "";
-    for (let i = 0; i < historyList.length; i++) {
-        const listItem = document.createElement("li")
-        listItem.innerHTML = `Roll ${i + 1}: <span>${getDiceFace(historyList[i])}</span>`;
-        rollHistoryEl.appendChild(listItem);
+    for (let i = 0; i < historyList.length; i++) { 
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `Roll ${historyList.length - i}: <span>${getDiceFace(historyList[historyList.length - 1 - i])}</span>`;
+        rollHistoryEl.appendChild(listItem); 
     }
 }
+
 
 function getDiceFace(rollResult) {
     switch (rollResult) {
         case 1:
-            return "&#9856;";
+            return `<img  id="dice-image" src="images/dice_1.png" alt="1">`;
         case 2:
-            return "&#9857;";
+            return `<img id="dice-image" src="images/dice_2.png" alt="2">`;
         case 3:
-            return "&#9858;";
+            return `<img id="dice-image" src="images/dice_3.png" alt="3">`;
         case 4:
-            return "&#9859;";
+            return `<img id="dice-image" src="images/dice_4.png" alt="4">`;
         case 5:
-            return "&#9860;";
+            return `<img id="dice-image" src="images/dice_5.png" alt="5">`;
         case 6:
-            return "&#9861;";
+            return `<img id="dice-image" src="images/dice_6.png" alt="6">`;
         default:
             return "";
     }
 }
-
 
 
 buttonEl.addEventListener("click", () => {
@@ -49,5 +49,5 @@ buttonEl.addEventListener("click", () => {
     setTimeout(() => {
       diceEl.classList.remove("roll-animation");
       rollDice();
-    }, 1000);
+    }, 470);
   });
