@@ -19,7 +19,7 @@ section {
   border-radius: 0.5rem;
 }
 
-.dice {
+#dice {
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
 }

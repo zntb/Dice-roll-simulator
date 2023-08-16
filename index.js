@@ -27,17 +27,17 @@ function updateRollHistory() {
 function getDiceFace(rollResult) {
     switch (rollResult) {
         case 1:
-            return `<img  id="dice-image" src="images/dice_1.png" alt="1">`;
+            return `<img  id="dice-image" src="images/roll_1.png" alt="1">`;
         case 2:
-            return `<img id="dice-image" src="images/dice_2.png" alt="2">`;
+            return `<img id="dice-image" src="images/roll_2.png" alt="2">`;
         case 3:
-            return `<img id="dice-image" src="images/dice_3.png" alt="3">`;
+            return `<img id="dice-image" src="images/roll_3.png" alt="3">`;
         case 4:
-            return `<img id="dice-image" src="images/dice_4.png" alt="4">`;
+            return `<img id="dice-image" src="images/roll_4.png" alt="4">`;
         case 5:
-            return `<img id="dice-image" src="images/dice_5.png" alt="5">`;
+            return `<img id="dice-image" src="images/roll_5.png" alt="5">`;
         case 6:
-            return `<img id="dice-image" src="images/dice_6.png" alt="6">`;
+            return `<img id="dice-image" src="images/roll_6.png" alt="6">`;
         default:
             return "";
     }
